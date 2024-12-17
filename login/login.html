@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <h1>HERO ACADEMY</h1>
+        <ul class="navbar">
+            <li><a class="itemnavbar" href="/index.html">Home</a></li>
+            <li></li><a class="itemnavbar" href="/login/login.html">Login</a></li>
+            <li></li><a class="itemnavbar" href="informativos/informativos.html">Informativos</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="card-container">
+            <div class="cardentrar" id="card1">
+                <DIV class="containerbtnslide">
+                    <p>Não tem Conta!?<a onclick="goToCard(2)">Registrar</a></p>
+                </DIV>
+                <label for="checkbox1" class="card-content">
+                    <h3>Faça o Login!</h3>
+                    <div id="result1"></div>
+                    <input type="text" class="inputlogin" id="idnome" placeholder="IDNOME*">
+                    <input type="password" class="inputlogin" id="senhalogin" placeholder="SENHA*">
+                    <button class="btnconfirm" id="btnlogin">Entrar</button>
+                </label>
+
+            </div>
+
+            <div class="cardentrar" id="card2" style="display:none;">
+                <DIV class="containerbtnslide">
+                    <p>Já tem uma Conta!?<a onclick="goToCard(1)">Login</a></p>
+                </DIV>
+                <label for="checkbox2" class="card-content">
+                    <h3>Registre-se</h3>
+                    <div id="result2"></div>
+                    <input type="text" class="inputlogin" id="idnomeregister" placeholder="IDNOME*">
+                    <input type="password" class="inputlogin" id="senhaloginregister" placeholder="SENHA*">
+
+                    <select  class="inputlogin" id="classSelect" name="classSelect">
+                        <option class="opcoesdisable" value="User" disabled >Escolha sua Classe v</option>
+                        <option class="optiones" value="cavaleiro">Cavaleiro</option>
+                        <option value="mago">Mago</option>
+                    </select>
+                    <button class="btnconfirm" id="btnregistrar">Registrar</button>
+                </label>
+            </div>
+            <div id="result"></div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="/login/login.js"></script>
+
+</html>

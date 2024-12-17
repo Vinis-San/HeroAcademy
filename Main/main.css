@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pixelify Sans', sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('/imagens/background\ rpg.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+header {
+    background-color: #33333380;
+    color: #fff;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid orange;
+    height: 30%;
+    overflow: visible;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0.5em;
+}
+
+header h3{
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content:flex-end;
+    align-items: center;
+    margin: 1%;
+}
+
+.itemnavbar {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+main {
+    width: 95%;
+    height: 100%;
+    height: max-content;
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containermaior{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 1em;
+    gap: 1em;
+}
+
+.container1{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.infousuario{
+    background-color: #333333c0;
+    border: 2px solid orange;
+    border-radius: 1em;
+    width: fit-content;
+    height: fit-content;
+    margin: 0.5em;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.infousuario h5{
+    font-size: 2.3em;
+}
+.infousuario h6{
+    font-size: 1em;
+}
+.infousuario p{
+    font-size: 1.7em;
+}
+
+.infousuario img{
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+}
+
+.linhausuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.3em;
+}
+
+.container2{
+    width: 95%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+#quiz{
+    background-color: #333333c0;
+    border: 2px solid orange;
+    border-radius: 1em;
+    width: max-content;
+    height: fit-content;
+    margin: 0.5em;
+    padding: 0.9em;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.cssquiz{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.cssquiz h3{
+    font-size: 2em;
+}
+
+.question{
+display: flex;
+    flex-direction: column;
+}
+
+.optionsquiz{
+
+    margin: 0.5em;
+}
+
+.question label{
+    font-size: 1em;
+    margin: 0.9em;
+    padding: 1em;
+    
+}
+
+.quiz input{
+    margin-right: 0.5em;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: orange;
+}
+
+.quiz button{
+    border: none;
+    font-size: 1em;
+    padding: 0.5em;
+    color: white;
+    background-color: #333333da;
+    border: 2px solid orange;
+    margin: 0.5em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.quiz button:hover{
+    border: none;
+    font-size: 1em;
+    padding: 0.5em;
+    color: white;
+    background-color: #333333da;
+    border: 2px solid orange;
+    margin: 0.5em;
+    transform: scale(1.03);
+}
+
+#result{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer{
+    background-color: #33333380;
+    color: #fff;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid orange;
+    bottom: 0;
+    
+    overflow: visible;
+}
+footer p{
+    margin: 1em;
+}
