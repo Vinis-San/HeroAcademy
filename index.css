@@ -194,7 +194,7 @@ main {
 
 .top-players th,
 .top-players td {
-    padding: 12px;
+    padding:0.2em;
     border: 1px solid orange;
     text-align: center;
 }
