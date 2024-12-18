@@ -39,7 +39,7 @@ header h1 {
     display: flex;
     flex-direction: row;
     width: 50%;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
     margin: 1%;
 }
@@ -76,7 +76,7 @@ main {
     padding: 1em;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     text-align: center;
     border-radius: 1em;
 }
@@ -84,16 +84,17 @@ main {
 .cardentrar h3 {
     font-size: 2em;
 }
+
 .card-content {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   gap: 1EM;
-   width: 90%;
-   height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1EM;
+    width: 90%;
+    height: 100%;
 }
 
-.containerbtnslide{
+.containerbtnslide {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,12 +103,13 @@ main {
     margin-bottom: 0.5em;
 }
 
-.containerbtnslide a{
+.containerbtnslide a {
     margin-left: 0.5em;
     color: orange;
-    text-decoration:underline;
+    text-decoration: underline;
     cursor: pointer;
 }
+
 .btnslide {
     background-color: rgba(255, 255, 255, 0);
     color: white;
@@ -122,7 +124,7 @@ main {
     background-color: #0056b3;
 }
 
-.inputlogin{
+.inputlogin {
     width: 100%;
     font-size: 1em;
     padding: 0.4em;
@@ -131,12 +133,12 @@ main {
     color: #818181;
 }
 
-.inputlogin:focus-visible{
+.inputlogin:focus-visible {
     border: 1px solid orange;
 }
 
 
-.btnconfirm{
+.btnconfirm {
     background: linear-gradient(#ffbb00, #ecb212);
     width: 95%;
     font-size: 1.5em;
@@ -147,19 +149,19 @@ main {
     cursor: pointer;
 }
 
-select option{
+select option {
     -webkit-appearance: none;
     border: 1px solid orange;
     background-color: #333333c2;
     color: white;
 }
 
-select option.opcoesdisable{
+select option.opcoesdisable {
     color: #808080;
     cursor: not-allowed;
 }
 
-#result{
+#result {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -167,4 +169,60 @@ select option.opcoesdisable{
     color: #ecb212;
     text-shadow: 2px 2px 4px #333;
     font-size: 1.5em;
+}
+
+/* Media Query para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .containernomeuser {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-container {
+        width: 100%;
+    }
+
+    .cardentrar {
+        width: 90%;
+    }
+
+    .containerbtnslide a {
+        font-size: 1.2em;
+        margin-left: 0.3em;
+    }
+
+    .btnslide {
+        width: 100%;
+        margin: 0.3em 0;
+    }
+
+    .inputlogin {
+        width: 90%;
+        font-size: 1.2em;
+    }
+
+    .btnconfirm {
+        width: 90%;
+        font-size: 1.2em;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .itemnavbar {
+        margin-left: 5px;
+        font-size: 1.2em;
+    }
 }

@@ -316,12 +316,25 @@ footer p {
     }
 
     .container1, .container2 {
+        display: flex;
         width: 100%;
+        justify-content: center;
+        align-items: center;
     }
 
     .infousuario {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        width: 95%;
+        
+    }
+
+    .linhausuario{
+        text-align: start;
+    }
+
+    .linhausuario p{
+        font-size: 1.5em;
     }
 
     .cssquiz {
