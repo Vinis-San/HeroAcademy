@@ -3,8 +3,8 @@
       {
         "nome": "Vinicius Andrade",
         "idnome": "admin_mago",
-        "senha": "",
-        "classe": "Magosenha_segura123",
+        "senha": "senha_segura123",
+        "classe": "Mago",
         "nivel_classe": "Mestre dos Magos"
       },
       {

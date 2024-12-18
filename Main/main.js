@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', async (event) => {
 
         const classImage = document.getElementById('fotousuario');
         if (classeUsuario === 'Cavaleiro') {
-            classImage.src = '../HeroAcademy/imagens/knight.jpg'; // Substitua pelo caminho da imagem do cavaleiro
+            classImage.src = '../imagens/knight.jpg'; // Substitua pelo caminho da imagem do cavaleiro
         } else if (classeUsuario === 'Mago') {
-            classImage.src = '../HeroAcademy/imagens/magic.jpg'; // Substitua pelo caminho da imagem do mago
+            classImage.src = '../imagens/magic.jpg'; // Substitua pelo caminho da imagem do mago
         }
     }
 
@@ -88,7 +88,7 @@ async function submitQuiz() {
 
 async function carregarUsuarios() {
     try {
-        const response = await fetch('../HeroAcademy/login/user.json'); // Atualizado para o caminho correto
+        const response = await fetch('../login/user.json'); // Atualizado para o caminho correto
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
