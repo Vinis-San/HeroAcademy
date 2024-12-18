@@ -1,12 +1,14 @@
 {
     "users": [
       {
+        "nome": "Vinicius Andrade",
         "idnome": "admin_mago",
         "senha": "senha_segura123",
         "classe": "Mago",
         "nivel_classe": "Mestre dos Magos"
       },
       {
+        "nome": "Rudson Barbas",
         "idnome": "user_knight",
         "senha": "senha_segura456",
         "classe": "Cavaleiro",

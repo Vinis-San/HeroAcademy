@@ -14,7 +14,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     height: 100%;
-    overflow-y: hidden;
+    overflow-y:auto;
 }
 
 header {
@@ -35,25 +35,57 @@ header h1 {
     margin: 0.5em;
 }
 
-header h3{
+header h3 {
     font-size: 1.5em;
-    margin: 0.5em;
+    margin: 0.5em 0em 0.5em 0em;
 }
 
-.navbar {
+header h5 {
+    font-size: 1.9em;
+    margin-left: 0.3em;
+    margin-right: 0.5em;
+    color: orange;
+}
+
+.containernomeuser {
     display: flex;
     flex-direction: row;
-    width: 50%;
-    justify-content:flex-end;
     align-items: center;
-    margin: 1%;
+    justify-content: center;
 }
 
-.itemnavbar {
-    text-decoration: none;
-    color: #fff;
-    margin-left: 10px;
-    font-size: 1.5em;
+.containernomeuser button {
+    border: none;
+    font-size: 1em;
+    padding: 0.5em;
+    color: white;
+    background-color: #333333da;
+    border: 2px solid orange;
+    margin: 0.5em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.containernomeuser button:hover {
+    border: none;
+    font-size: 1em;
+    padding: 0.5em;
+    color: white;
+    background-color: #333333da;
+    border: 2px solid orange;
+    margin: 0.5em;
+    transform: scale(1.03);
+}
+
+.containernomeuser button:active {
+    border: none;
+    font-size: 1em;
+    padding: 0.5em;
+    color: white;
+    background-color: #333333da;
+    border: 2px solid orange;
+    margin: 0.5em;
+    transform: scale(1.0);
 }
 
 main {
@@ -67,7 +99,7 @@ main {
     justify-content: center;
 }
 
-.containermaior{
+.containermaior {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -75,14 +107,14 @@ main {
     gap: 1em;
 }
 
-.container1{
+.container1 {
     width: 95%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.infousuario{
+.infousuario {
     background-color: #333333c0;
     border: 2px solid orange;
     border-radius: 1em;
@@ -99,23 +131,44 @@ main {
     color: white;
 }
 
-.infousuario h5{
+.infousuario h5 {
     font-size: 2.3em;
 }
-.infousuario h6{
+
+.infousuario h6 {
     font-size: 1em;
 }
-.infousuario p{
+
+.infousuario p {
     font-size: 1.7em;
 }
 
-.infousuario img{
+.infousuario img {
     width: 6em;
     height: 6em;
     border-radius: 50%;
 }
 
-.linhausuario{
+#infonews {
+    background-color: #333333c0;
+    border: 2px solid orange;
+    border-radius: 1em;
+    width: fit-content;
+    height: fit-content;
+    margin: 0.5em;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    align-items: center;
+    text-align: start;
+    display: flex;
+    color: white;
+    line-height: 1.5;
+}
+
+
+.linhausuario {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,14 +176,14 @@ main {
     gap: 0.3em;
 }
 
-.container2{
+.container2 {
     width: 95%;
     height: 80%;
     display: flex;
     flex-direction: row;
 }
 
-#quiz{
+#quiz {
     background-color: #333333c0;
     border: 2px solid orange;
     border-radius: 1em;
@@ -147,41 +200,41 @@ main {
     color: white;
 }
 
-.cssquiz{
+.cssquiz {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
 }
 
-.cssquiz h3{
+.cssquiz h3 {
     font-size: 2em;
 }
 
-.question{
-display: flex;
+.question {
+    display: flex;
     flex-direction: column;
 }
 
-.optionsquiz{
+.optionsquiz {
 
     margin: 0.5em;
 }
 
-.question label{
+.question label {
     font-size: 1em;
     margin: 0.9em;
     padding: 1em;
-    
+
 }
 
-.quiz input{
+.quiz input {
     margin-right: 0.5em;
     width: 1.5em;
     height: 1.5em;
     background-color: orange;
 }
 
-.quiz button{
+.quiz button {
     border: none;
     font-size: 1em;
     padding: 0.5em;
@@ -193,7 +246,7 @@ display: flex;
     cursor: pointer;
 }
 
-.quiz button:hover{
+.quiz button:hover {
     border: none;
     font-size: 1em;
     padding: 0.5em;
@@ -204,14 +257,26 @@ display: flex;
     transform: scale(1.03);
 }
 
-#result{
+.quiz button:active {
+    border: none;
+    font-size: 1em;
+    padding: 0.5em;
+    color: white;
+    background-color: #333333da;
+    border: 2px solid orange;
+    margin: 0.5em;
+    transform: scale(1.0);
+}
+
+
+#result {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-footer{
+footer {
     background-color: #33333380;
     color: #fff;
     display: flex;
@@ -221,9 +286,57 @@ footer{
     align-items: center;
     border-top: 2px solid orange;
     bottom: 0;
-    
+
     overflow: visible;
 }
-footer p{
+
+footer p {
     margin: 1em;
+}
+
+/* Media Query para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .containernomeuser {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containermaior {
+        flex-direction: column;
+    }
+
+    .container1, .container2 {
+        width: 100%;
+    }
+
+    .infousuario {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cssquiz {
+        width: 100%;
+        align-items: center;
+    }
+
+    .question label {
+        font-size: 1em;
+        margin: 0.5em;
+        text-align: left;
+    }
+
+    .quiz button {
+        width: 100%;
+        margin: 0.5em 0;
+    }
 }

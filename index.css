@@ -261,3 +261,50 @@ main {
 .about p {
     font-size: 2em;
 }
+
+/* Media Query para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .containernomeuser {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containermaior {
+        flex-direction: column;
+    }
+
+    .container1, .container2 {
+        width: 100%;
+    }
+
+    .infousuario {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cssquiz {
+        width: 100%;
+        align-items: center;
+    }
+
+    .question label {
+        font-size: 1em;
+        margin: 0.5em;
+        text-align: left;
+    }
+
+    .quiz button {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+}

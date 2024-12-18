@@ -1,94 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hero Academy</title>
-    <link rel="stylesheet" href="/Main/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="/Main/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>HERO ACADEMY</h1>
-        <h3>Bem vindo, PESSOA!</h3>
+      <h1>HERO ACADEMY</h1>
+      <div class="containernomeuser">
+        <h3>
+          Bem vindo !
+          <h5 id="nomeusuario"></h5>
+        </h3>
+        <button onclick="window.location.href='../index.html';">
+          Trocar Usuário
+        </button>
+      </div>
     </header>
     <main>
-        <section class="containermaior">
-            <section class="container1">
-                <div class="infousuario">
-                    <div class="linhausuario" id="linhausuario1"> <img src="/imagens/background rpg.png"
-                            alt="Foto cavaleiro">
-                    </div>
-                    <div class="linhausuario" id="linhausuario1">
-                        <h5 class="infoitemusuario" id="idnomeusuario">Rudson_cavaleirosss</h5>
-                        <p class="infoitemusuario" id="nivelclasseusuario">LVL 4. Cavaleiro de Ouro</p>
-                        <h6 class="infoitemusuario" id="classeusuario">Cavaleiro</h6>
-                    </div>
-                </div>
-                <div class="infousuario">O que Colocar aqui?</div>
-            </section>
-            <section class="container2">
-                <div class="quiz" id="quiz">
-                    <form class="cssquiz" id="quizForm">
-                        <div class="question">
-                            <h3>1. What is the capital of the United Kingdom?</h3> 
-                            <div class="optionsquiz"><label><input type="radio" name="q1"
-                                    value="a"> London</label> <label><input type="radio" name="q1" value="b">
-                                Edinburgh</label> <label><input type="radio" name="q1" value="c">
-                                Cardiff</label>
-                            <label><input type="radio" name="q1" value="d"> Belfast</label></div>
-                        </div>
-                        <div class="question">
-                            <h3>2. Which word is a noun?</h3>
-                            <div class="optionsquiz">
-                            <label><input type="radio" name="q2" value="a">
-                                Quickly</label><label><input type="radio" name="q2" value="b">
-                                Happiness</label>
-                            <label><input type="radio" name="q2" value="c"> Beautiful</label> <label><input
-                                    type="radio" name="q2" value="d"> Run</label></div>
-                        </div>
-                        <div class="question">
-                            <h3>3. What is the past tense of "go"?</h3>
-                            <div class="optionsquiz"> <label><input type="radio" name="q3" value="a">
-                                Goed</label> <label><input type="radio" name="q3" value="b"> Goes</label>
-                            <label><input type="radio" name="q3" value="c"> Went</label> <label><input type="radio"
-                                    name="q3" value="d"> Gone</label></div>
-                        </div>
-                        <div class="question">
-                            <h3>4. How do you spell the number 40?</h3> <div class="optionsquiz">
-                                <label><input type="radio" name="q4" value="a">
-                                Fourty</label><label><input type="radio" name="q4" value="b"> Fortee</label>
-                            <label><input type="radio" name="q4" value="c"> Fortie</label> <label><input
-                                    type="radio" name="q4" value="d"> Forty</label></div>
-                        </div>
-                        <div class="question">
-                            <h3>5. Choose the correct sentence.</h3>
-                            <div class="optionsquiz">
-                            <label><input type="radio" name="q5" value="a"> She
-                                go
-                                to school every day.</label> <label><input type="radio" name="q5" value="b"> She
-                                goes to
-                                school every day.</label><br> <label><input type="radio" name="q5" value="c"> She going
-                                to
-                                school every day.</label> <label><input type="radio" name="q5" value="d"> She gone
-                                to
-                                school every day.</label>
-                                </div>
-                        </div>
-                        <button class="btnsubmit" type="button" onclick="submitQuiz()">Enviar Respostas</button>
-                        <div id="result"></div>
-                    </form>
-
-                </div>
-            </section>
+      <section class="containermaior">
+        <section class="container1">
+          <div class="infousuario">
+            <div class="linhausuario" id="linhausuario1">
+              <img
+                id="fotousuario"
+                src="/imagens/knight.jpg"
+                alt="Foto cavaleiro"
+              />
+            </div>
+            <div class="linhausuario" id="linhausuario1">
+              <h5 class="infoitemusuario" id="idnomeusuario">Nome do suário</h5>
+              <p class="infoitemusuario" id="nivelclasseusuario">
+                Cavaleiro ou Mago
+              </p>
+              <h6 class="infoitemusuario" id="classeusuario">
+                Varia com o nível do Cavaleiro ou Mago
+              </h6>
+            </div>
+          </div>
+          <div id="infonews">
+            <h3>O que vem por aí?</h3>
+            <p>
+              Veja as futuras novidades da plataforma gamificada de nivelamento
+              de inglês!
+            </p>
+            <ul>
+              <li>
+                🔄 <strong>Modo Repetição Espacedada</strong>: Uma nova
+                funcionalidade para otimizar a memorização de vocabulário.
+              </li>
+              <li>
+                🆕 <strong>Novos Desafios Semanais</strong>: Participe de
+                desafios e ganhe recompensas exclusivas.
+              </li>
+              <li>
+                🔖 <strong>Certificações Digitais</strong>: Receba certificações
+                digitais ao completar diferentes níveis.
+              </li>
+              <li>
+                🎥 <strong>Vídeos Educativos</strong>: Vídeos com dicas de
+                pronúncia e gramática.
+              </li>
+              <li>
+                📚 <strong>Biblioteca de Recursos</strong>: Acesso a livros,
+                artigos e quizzes adicionais.
+              </li>
+              <li>
+                💡 <strong>Sugestões Personalizadas</strong>: Receba sugestões
+                de estudos baseadas no seu progresso.
+              </li>
+            </ul>
+          </div>
         </section>
+        <section class="container2">
+          <div class="quiz" id="quiz">
+            <form class="cssquiz" id="quizForm">
+              <div class="question">
+                <h3>1. What is the capital of the United Kingdom?</h3>
+                <div class="optionsquiz">
+                  <label
+                    ><input type="radio" name="q1" value="a" /> London</label
+                  >
+                  <label
+                    ><input type="radio" name="q1" value="b" /> Edinburgh</label
+                  >
+                  <label
+                    ><input type="radio" name="q1" value="c" /> Cardiff</label
+                  >
+                  <label
+                    ><input type="radio" name="q1" value="d" /> Belfast</label
+                  >
+                </div>
+              </div>
+              <div class="question">
+                <h3>2. Which word is a noun?</h3>
+                <div class="optionsquiz">
+                  <label
+                    ><input type="radio" name="q2" value="a" /> Quickly</label
+                  ><label
+                    ><input type="radio" name="q2" value="b" /> Happiness</label
+                  >
+                  <label
+                    ><input type="radio" name="q2" value="c" /> Beautiful</label
+                  >
+                  <label><input type="radio" name="q2" value="d" /> Run</label>
+                </div>
+              </div>
+              <div class="question">
+                <h3>3. What is the past tense of "go"?</h3>
+                <div class="optionsquiz">
+                  <label><input type="radio" name="q3" value="a" /> Goed</label>
+                  <label><input type="radio" name="q3" value="b" /> Goes</label>
+                  <label><input type="radio" name="q3" value="c" /> Went</label>
+                  <label><input type="radio" name="q3" value="d" /> Gone</label>
+                </div>
+              </div>
+              <div class="question">
+                <h3>4. How do you spell the number 40?</h3>
+                <div class="optionsquiz">
+                  <label
+                    ><input type="radio" name="q4" value="a" /> Fourty</label
+                  ><label
+                    ><input type="radio" name="q4" value="b" /> Fortee</label
+                  >
+                  <label
+                    ><input type="radio" name="q4" value="c" /> Fortie</label
+                  >
+                  <label
+                    ><input type="radio" name="q4" value="d" /> Forty</label
+                  >
+                </div>
+              </div>
+              <div class="question">
+                <h3>5. Choose the correct sentence.</h3>
+                <div class="optionsquiz">
+                  <label
+                    ><input type="radio" name="q5" value="a" /> She go to school
+                    every day.</label
+                  >
+                  <label
+                    ><input type="radio" name="q5" value="b" /> She goes to
+                    school every day.</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="q5" value="c" /> She going to
+                    school every day.</label
+                  >
+                  <label
+                    ><input type="radio" name="q5" value="d" /> She gone to
+                    school every day.</label
+                  >
+                </div>
+              </div>
+              <button class="btnsubmit" type="button" onclick="submitQuiz()">
+                Enviar Respostas
+              </button>
+              <div id="result"></div>
+            </form>
+          </div>
+        </section>
+      </section>
     </main>
     <footer>
-        <p>Hero Academy &copy; 2024</p>
+      <p>Hero Academy &copy; 2024</p>
     </footer>
     <script src="/Main/main.js"></script>
-</body>
-
+  </body>
 </html>
