@@ -13,6 +13,13 @@
         "senha": "senha_segura456",
         "classe": "Cavaleiro",
         "nivel_classe": "Cavaleiro de Ouro"
+      },
+      {
+        "nome": "Beta Tester",
+        "idnome": "kirito",
+        "senha": "12345",
+        "classe": "Cavaleiro",
+        "nivel_classe": "Cavaleiro de Ouro"
       }
     ]
   }
