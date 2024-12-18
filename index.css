@@ -293,7 +293,7 @@ main {
     font-size: 2em;
 }
 
-//* Media Query para dispositivos móveis */
+/* Media Query para dispositivos móveis */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
