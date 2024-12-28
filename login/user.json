@@ -3,14 +3,14 @@
       {
         "nome": "Vinicius Andrade",
         "idnome": "admin_mago",
-        "senha": "senha_segura123",
+        "senha": "senha_segura_mago",
         "classe": "Mago",
         "nivel_classe": "Mestre dos Magos"
       },
       {
         "nome": "Rudson Barbas",
         "idnome": "user_knight",
-        "senha": "senha_segura456",
+        "senha": "senha_segura_cavaleiro",
         "classe": "Cavaleiro",
         "nivel_classe": "Cavaleiro de Ouro"
       }

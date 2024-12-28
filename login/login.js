@@ -39,3 +39,10 @@ function logar() {
     });
 }
 document.querySelector("#btnlogin").addEventListener("click", logar);
+
+
+document.getElementById("btncontas").addEventListener("click", function(){
+  var section = document.getElementById("section_escondida");
+  section.classList.toggle("section_escondida_class");
+  section.classList.toggle("section_visivel_class");
+});
