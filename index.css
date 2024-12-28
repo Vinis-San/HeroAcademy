@@ -302,6 +302,7 @@ main {
     header {
         flex-direction: column;
         text-align: center;
+        width: 100%;
     }
 
     .navbar {
@@ -387,13 +388,13 @@ main {
     }
 
     .top-players table {
-        width: 100%;
+        width: 90%;
     }
 
     .top-players th,
     .top-players td {
-        padding: 0.5em;
-        font-size: 1em;
+        padding: 0.3em;
+        font-size: 80%;
     }
 
     .about {
