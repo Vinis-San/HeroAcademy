@@ -27,7 +27,6 @@ header {
     align-items: center;
     border-bottom: 2px solid orange;
     height: 30%;
-    overflow: visible;
 }
 
 header h1 {
@@ -261,6 +260,10 @@ select option.opcoesdisable {
 
 /* Media Query para dispositivos móveis */
 @media screen and (max-width: 768px) {
+
+    body{
+        overflow: auto;
+    }
     header {
         flex-direction: column;
         text-align: center;
