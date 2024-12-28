@@ -69,7 +69,7 @@ async function submitQuiz() {
     }
 
     const resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = `<p>Você Acertou ${score} de ${totalQuestions}.</p>`;
+    resultDiv.innerHTML = `<p>Você Acertou ${score} de ${totalQuestions}.</p><p id="testelvl"></p>`;
 
     const storedUserName = localStorage.getItem('idnome');
     const users = await carregarUsuarios();
@@ -82,13 +82,14 @@ async function submitQuiz() {
         // Atualize o localStorage com o novo nível de classe do usuário
         localStorage.setItem('nivel_classe', usuarioAtualizado.nivel_classe);
         // Atualize a exibição na página
-        document.querySelector('#nivelclasseusuario').innerHTML = `LVL ${score + 1}. ${usuarioAtualizado.nivel_classe}`;
+        document.querySelector('#nivelclasseusuario').innerHTML = `Nível ${score + 1}. ${usuarioAtualizado.nivel_classe}`;
+        document.querySelector('#testelvl').innerHTML = ` Nível Atualizado: ${usuarioAtualizado.nivel_classe}`;
     }
 }
 
 async function carregarUsuarios() {
     try {
-        const response = await fetch('../login/user.json'); // Atualizado para o caminho correto
+        const response = await fetch('../login/user.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }

@@ -5,14 +5,14 @@
         "idnome": "admin_mago",
         "senha": "senha_segura_mago",
         "classe": "Mago",
-        "nivel_classe": "Mestre dos Magos"
+        "nivel_classe": "Teste sua força no Quiz!"
       },
       {
         "nome": "Rudson Barbas",
         "idnome": "user_knight",
         "senha": "senha_segura_cavaleiro",
         "classe": "Cavaleiro",
-        "nivel_classe": "Cavaleiro de Ouro"
+        "nivel_classe": "Teste sua força no Quiz!"
       },
       {
         "nome": "Beta Tester",

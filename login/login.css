@@ -280,7 +280,7 @@ select option.opcoesdisable {
     }
 
     .card-container {
-        width: 100%;
+        width: 95%;
     }
 
     .cardentrar {
@@ -315,6 +315,9 @@ select option.opcoesdisable {
     .itemnavbar {
         margin-left: 5px;
         font-size: 1.2em;
+    }
+    .containerbtnconta{
+        width: 95%;
     }
     .divcontas{
         flex-direction: column;
