@@ -229,7 +229,7 @@ select option.opcoesdisable {
     border: 2px solid orange;
     padding: 1em;
     gap: 0.5em;
-    display: block;
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -312,5 +312,8 @@ select option.opcoesdisable {
     .itemnavbar {
         margin-left: 5px;
         font-size: 1.2em;
+    }
+    .divcontas{
+        flex-direction: column;
     }
 }
