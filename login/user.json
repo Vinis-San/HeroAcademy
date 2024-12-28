@@ -3,14 +3,14 @@
       {
         "nome": "Vinicius Andrade",
         "idnome": "admin_mago",
-        "senha": "senha_segura_mago",
+        "senha": "senha_mago",
         "classe": "Mago",
         "nivel_classe": "Teste sua força no Quiz!"
       },
       {
         "nome": "Rudson Barbas",
         "idnome": "user_knight",
-        "senha": "senha_segura_cavaleiro",
+        "senha": "senha_cavaleiro",
         "classe": "Cavaleiro",
         "nivel_classe": "Teste sua força no Quiz!"
       },
